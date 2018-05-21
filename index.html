@@ -11,9 +11,9 @@
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 
-
+<body>
 <div class="section no-pad-bot" id="logo">
-    <div class="container center">
+    <div class="center">
         <img src="img/ddmatchLogo.png" height="300"/>
     </div>
 </div>
@@ -21,17 +21,11 @@
     <div class="col s9">
         <h1 class="header center white-text light">Trouvez une <b>nounou</b> ou une <b>baby-sitter</b>!</h1>
         <div class="row center">
-            <h5 class="header col s12 white-text light">Vous cherchez une nounou de confiance ? Bienvenue sur
+            <h4 class="header col s12 white-text light">Vous cherchez une nounou de confiance ? Bienvenue sur
                 DoudyMatch, votre nouvel allié pour trouver à Paris une solution de garde adaptée à vos besoins.
                 Fonctionnant avec le même système de matching affinitaire que les sites de rencontre, DoudyMatch vous
-                permet de trouver en quelques clics votre bonheur.</h5>
+                permet de trouver en quelques clics votre bonheur.</h4>
         </div>
-        <div class="row center">
-            <a href="http://materializecss.com/getting-started.html" id="getstart-button"
-               class="btn-large waves-effect waves-light red lighten-1">Get Started</a>
-        </div>
-        <br><br>
-
     </div>
     <div class="col s3">
         <div class="card-panel white black-text">
@@ -42,14 +36,18 @@
             <br>
             <br>
             <div class="row">
-                <div class="input-field col s8">
-                    <input id="email" type="email" class="validate">
-                    <label for="email">Email</label>
-                </div>
-                <div class="col s4">
-                    <a href="http://materializecss.com/getting-started.html" id="email-button"
-                       class="btn-large waves-effect waves-light red lighten-1">S'inscrire</a>
-                </div>
+                <form method="post" id="contact"
+                      action="https://doudymatch.us18.list-manage.com/subscribe/post?u=e7de2da3d5e1e9621ae75d778&amp;id=afd45edad8">
+                    <div class="input-field col s8">
+                        <input id="email" type="email" name="EMAIL" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col s4">
+                        <input value="" type="submit" hidden>
+                        <button type="submit" class="btn-large waves-effect waves-light red lighten-1">S'inscrire
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
