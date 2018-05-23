@@ -3,6 +3,10 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <meta name="description" content="Vous cherchez une nounou de confiance ? Bienvenue sur
+                DoudyMatch, votre nouvel allié pour trouver à Paris une solution de garde adaptée à vos besoins.
+                Fonctionnant avec le même système de matching affinitaire que les sites de rencontre, DoudyMatch vous
+                permet de trouver en quelques clics votre bonheur."/>
     <title>Doudymatch - Trouvez votre match!</title>
     <!-- CSS  -->
     <link rel="icon" type="img/png" href="img/ddmatchLogo.png"/>
@@ -13,12 +17,10 @@
 </head>
 
 <body>
-<div class="section no-pad" id="logo">
-    <div class="center">
+<div class="section no-pad row" id="logo">
+    <div class="col m2 red lighten-1" id="timer"></div>
+    <div class="center col m4 offset-m2">
         <img class="responsive-img" src="img/ddmatchLogo.png" height="150"/>
-    </div>
-    <div class="center" id="timer">
-
     </div>
 </div>
 <div class="section no-pad-bot cyan darken-1 row" style="position:relative">
@@ -36,7 +38,7 @@
     </div>
     <div class="col l3 s12">
         <div class="card-panel white black-text">
-            <h3 class="center deep-orange-text lighten-1">INSCRIVEZ-VOUS!</h3>
+            <h3 class="center red-text lighten-1">INSCRIVEZ-VOUS!</h3>
             <h4 class="center cyan-text darken-1">Parents et Babysitters</h4>
             <span class="flow-text"><b>DoudyMatch sera bientôt en ligne</b>, alors n’hésitez pas à nous laisser votre adresse mail afin que nous puissions vous contacter le moment venu.
             </span>
@@ -202,7 +204,7 @@
 
                 <a href="https://www.facebook.com/doudymatch/"><img src="img/facebook.png"/></a>
                 <a href="https://www.instagram.com/doudymatch/"><img src="img/instagram.png"></a>
-                <a href="mailto:doudymatch@gmail.com"><img src="img/email.png"/></a>
+                <a href="mailto:info@doudymatch.com"><img src="img/email.png"/></a>
 
             </div>
             <div class="col l3 s12">
@@ -229,9 +231,9 @@
     var countdown = new Countdown({
         selector: '#timer',
         msgBefore: 'Doudy bientôt en ligne',
-        msgAfter: 'Nous sommes en ligne!',
+        msgAfter: 'En ligne!',
         msgPattern:
-            '<h5 class="red-text lighten-1">En ligne dans: {days} j {hours} h {minutes} min</h5>',
+            '<h6 class="white-text center">En ligne: <b>{days}</b> j <b>{hours}</b> h <b>{minutes}</b> min <b>{seconds}</b> s</h6>',
         dateStart: new Date('2018/05/22 12:00'),
         dateEnd: new Date('2018/08/31 12:00'),
         onStart: function() {
