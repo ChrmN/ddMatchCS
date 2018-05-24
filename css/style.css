@@ -12,3 +12,13 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+.relative {
+    position:relative;
+}
+.fixBotLeft {
+    position:absolute;
+    bottom: -6px;
+}
+.margin-30 {
+    margin:30px;
+}
